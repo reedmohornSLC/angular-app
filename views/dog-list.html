@@ -1,0 +1,14 @@
+<html ng-app="billysAdoption">
+<body ng-controller="listController">
+
+<p class="list">Here Is My Dank Dog List:</p>
+
+<ul class= "unordered">
+    <li ng-repeat = "dog in dogs" class = "middle">
+        <h3>{{dog.name.$t}}</h3>
+        <img src="{{dog.media.photos.photo[0].$t}}"class = "pic">
+        <p>Sex: {{dog.sex.$t}}<p>
+        <p>Age: {{dog.age.$t}}</p>
+        <p>Breed: {{dog.breeds.breed.$t}}</p>
+    </li>
+<ul>

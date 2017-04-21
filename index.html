@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="billysAdoption">
+<head>
+    <meta charset="UTF-8">
+    <title>Bill's Adoption Service</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body ng-controller='listController'>
+  <!-- {{test}}<br>
+  {{test1}} -->
+      <header>
+
+
+        <div class = "primary-nav">
+          <h2 class = "main-header">Billy James' Adoption Service</h2>
+            <a ui-sref="search"><div class ="left-box">Search</div></a>
+            <a ui-sref="dog-list"><div class ="right-box">Dog List</div></a>
+
+
+
+        </div>
+
+      </header>
+
+      <!--This is for views-->
+      <ui-view></ui-view>
+
+      <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.3.1/angular-ui-router.min.js"></script>
+      <script src="./app/app.js"></script>
+      <script src="./app/directive.js"></script>
+      <script src="./app/listController.js"></script>
+      <script src="./app/listService.js"></script>
+
+
+
+<body>
+</html>

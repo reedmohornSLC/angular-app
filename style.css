@@ -1,0 +1,94 @@
+
+
+.primary-nav{
+  width:100%;
+  height:100px;
+  text-align:center;
+
+}
+
+.left-box{
+  width:49%;
+  float: left;
+  border: 1px solid black;
+  background-color: green;
+  color: red;
+}
+.right-box{
+  width: 49%;
+  float:right;
+  border: 1px solid black;
+  background-color: green;
+  color:red;
+
+}
+
+.shitty{
+
+  height : 75px;
+  width: 75px;
+  display:block;
+  margin-left: auto;
+  margin-right:auto;
+  border:1px solid black;
+}
+
+.list{
+  text-align: center;
+  font-family:fantasy;
+}
+
+.main-header{
+  font-family: Impact, sans-serif;
+}
+
+*{
+  box-sizing: border-box;
+}
+.search{
+  text-align: center;
+  font-size: 30px;
+  font-family: Arial Rounded MT Bold;
+}
+body{
+  background-color: purple;
+}
+.middle{
+  text-align: center;
+}
+
+.unordered li{
+  list-style-type: none;
+}
+.pic{
+  border:3.5px solid black;
+}
+
+.bill{
+  height: 75px;
+  width:75px;
+}
+
+.changing-box{
+  margin-left: auto;
+  margin-right: auto;
+  height: 220px;
+  width: 220px;
+  background-image: url("./screenshot.png");
+  border: 3px solid black;
+  background-size:cover;
+  animation-name: switcher;
+  animation-duration: 8s;
+  animation-iteration-count: infinite;
+
+}
+
+.micky{
+  text-align: center;
+}
+
+@keyframes switcher {
+  0% {background-image: url("./screenshot.png")}
+  33% {background-image: url("./screenshot2.png")}
+  66% {background-image: url("IMG_0699.jpg")}
+}
