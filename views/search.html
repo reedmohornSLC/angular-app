@@ -2,6 +2,7 @@
 <bills-face></bills-face>
 </div>
 <p class ="search">Search here for a dank animal!</p>
+<p class ='powered'>Powered by Petfinder API</p>
 
 <div class = "changing-box">
 
@@ -12,7 +13,14 @@ Type Of Animal:<br>
 <input type = "text" ng-model="type"><br>
 Location(zip or state):<br>
 <input type = "text" ng-model="location"><br>
-<input type = "submit" value="Submit That Shit"><br>
-{{type}}<br>
-{{location}}
+<input type = "submit" value="Submit That Shit" ng-click="clickSearch(type,location)"><br>
+
 </form>
+
+<div ng-repeat="pet in pets" class="searchbox">
+  <h3>{{pet.name.$t}}</h3>
+  <img src="{{pet.media.photos.photo[0].$t}}"class = "pic">
+  <p>Sex: {{pet.sex.$t}}<p>
+  <p>Age: {{pet.age.$t}}</p>
+  <p>Breed: {{pet.breeds.breed.$t}}</p>
+</div>

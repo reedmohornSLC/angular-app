@@ -12,5 +12,10 @@ angular.module('billysAdoption',['ui.router'])
      controller:'listController'
 
    })
+   .state('cool-animals-saved',{
+     url:'/dog-list',
+     templateUrl:'views/cool-animals-saved.html'
+
+   })
 
  })
